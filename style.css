@@ -1,36 +1,63 @@
-/* Apply responsive design techniques with media queries */
-@media (max-width: 768px) {
-    /* Style for smaller screens */
-    body {
-      font-size: 16px;
-    }
-  }
-  
-  /* Effective use of CSS libraries or frameworks (Bootstrap example) */
-  /* Customize Bootstrap classes as needed */
-  .navbar {
-    background-color: #007bff;
-  }
-  
-  /* Add custom styles for your website components */
-  /* Example for user name, email, and password fields */
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    width: 100%;
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the navigation bar */
+nav {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  /* Additional custom styles based on your design requirements */
-  /* For example, you can add styles for headings, paragraphs, buttons, etc. */
-  
-  /* Media query for larger screens (if needed) */
-  @media (min-width: 1200px) {
-    /* Style for larger screens */
-    body {
-      font-size: 18px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Style links in the navigation bar */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Add a hover effect to links */
+nav ul li a:hover {
+    color: #ff9900; /* Change color on hover */
+}
+
+/* Style the header section */
+header {
+    background-image: url('background_image.jpg'); /* Replace with your image */
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Add responsive styles using media queries */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    nav ul {
+        text-align: center;
+        padding-top: 20px;
+        display: block;
     }
-  }  
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
