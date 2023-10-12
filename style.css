@@ -1,0 +1,36 @@
+/* Apply responsive design techniques with media queries */
+@media (max-width: 768px) {
+    /* Style for smaller screens */
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Effective use of CSS libraries or frameworks (Bootstrap example) */
+  /* Customize Bootstrap classes as needed */
+  .navbar {
+    background-color: #007bff;
+  }
+  
+  /* Add custom styles for your website components */
+  /* Example for user name, email, and password fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Additional custom styles based on your design requirements */
+  /* For example, you can add styles for headings, paragraphs, buttons, etc. */
+  
+  /* Media query for larger screens (if needed) */
+  @media (min-width: 1200px) {
+    /* Style for larger screens */
+    body {
+      font-size: 18px;
+    }
+  }  
