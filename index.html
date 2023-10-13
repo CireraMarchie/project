@@ -22,7 +22,7 @@
             });
         });
     </script>
-    <title>Your Project Title</title>
+    <title>My Website</title>
 </head>
 <body>
     <header>
@@ -31,6 +31,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li> <!-- Link to the login page -->
             </ul>
         </nav>
     </header>
@@ -38,22 +39,45 @@
     <section id="home">
         <!-- Content for the Home section goes here -->
         <h1>Home Section</h1>
-        <h2>Welcome to Our Website.</h2>
-        <p>Explore our site to learn more about what we offer and how we can help you.</p>
+        <h2>Welcome to My Word!</h2>
+        <img src="home.jpg" alt="Profile Image"> 
+        <p>Explore my journey through college life, passions, and goals as I share my experiences and achievements.</p>
     </section>
 
     <section id="about">
         <!-- Content for the About section goes here -->
-        <h1>About Section</h1>
-        <h2>Learn more about us in this section.</h2>
-        <p>Learn more about our team and our mission below.</p>
+        <h1>About Me</h1>
+        <h2>Feel free to know me.</h2>
+        <img src="about.jpg" alt="Profile Image"> 
+        <p>I am routinely recognized for being on the honor roll, even in senior high school. Passing the entrance exam at Caraga State University was one of my greatest achievements. Therefore, my greatest achievement is my Education.</p>
     </section>
 
     <section id="contact">
-        <!-- Content for the Contact section goes here -->
-        <h1>Contact Section</h1>
-        <h2>Get in touch</h2>
-        <p>If you have any questions or inquiries, please feel free to <a href="login.php">Click here to login for inquiries</a></p>
-</section>    
+        <h1>Contact Me</h1>
+        <p>If you'd like to get in touch with me, please click the button below to show the contact form:</p>
+    
+        <button id="show-form-button">Show Form</button>
+    
+        <form id="contact-form" style="display: none;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+    
+
+<script>
+    document.getElementById('show-form-button').addEventListener('click', function () {
+        const form = document.getElementById('contact-form');
+        form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    });
+</script>
 </body>
 </html>

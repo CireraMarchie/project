@@ -16,11 +16,13 @@ header {
 /* Style the navigation menu */
 nav ul {
     list-style: none;
+    display: flex; /* Display items horizontally */
+    justify-content: center; /* Center items horizontally */
+    background-color: #333; /* Background color for navigation */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 20px; /* Add space between items */
 }
 
 nav a {
@@ -31,23 +33,42 @@ nav a {
 }
 
 nav a:hover {
-    color: #FF5733; /* Change the link color on hover */
+    color: #FF5733;
 }
 
 /* Style the sections */
 section {
     padding: 40px;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
 }
 
-/* Apply some basic styles to headings and paragraphs in sections */
 section h1 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #333;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #666;
 }
 
 section p {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #444;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
 /* Style the contact form */
@@ -74,52 +95,5 @@ section p {
 }
 
 #contact input[type="submit"]:hover {
-    background-color: #FF5733; /* Change the submit button color on hover */
-}
-
-/* Add media queries for responsiveness */
-@media screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-    nav ul li {
-        margin-right: 10px;
-    }
-    
-    section {
-        padding: 20px;
-    }
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px; /* Adjust spacing between links */
-}
-
-nav a {
-    text-decoration: none;
-    color: hsl(236, 27%, 88%); /* Default link color */
-    font-weight: bold;
-    transition: color 0.3s; /* Smooth color transition on hover */
-}
-
-nav a:hover {
-    color: rgb(243, 225, 225); /* Change link color on hover */
-}
-
-/* Style the highlighted section */
-section {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #f0f0f0; /* Background color of sections */
-    border: 1px solid #ddd;
-}
-
-/* Apply a different background color to the highlighted section */
-section:target {
-    background-color: #e0e0e0; /* Highlight color for the targeted section */
+    background-color: #FF5733;
 }
