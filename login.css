@@ -1,41 +1,37 @@
-/* Add your login page styles here */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-#login-form {
+.container {
     width: 300px;
     margin: 0 auto;
-    padding: 2rem;
-    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #ff3366;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 input[type="text"],
-input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 input[type="submit"] {
-    width: 100%;
-    background-color: #333;
+    background-color: #f7aeca;
     color: #fff;
+    padding: 10px 20px;
     border: none;
-    padding: 10px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-/* Add more styles as needed */
+input[type="submit"]:hover {
+    background-color: hsl(332, 39%, 44%);
+}
