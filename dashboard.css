@@ -21,6 +21,7 @@ nav ul {
 
 nav ul li {
     display: inline;
+    text-align: center; /* Center the text within list items */
 }
 
 nav ul li a {
@@ -93,10 +94,11 @@ footer {
 
     nav ul li {
         margin-bottom: 10px;
+        text-align: center; /* Center the text within list items on small screens */
     }
 
     /* Adjust padding for smaller screens */
-    #profile, #about {
+    #home, #about {
         padding: 1rem;
     }
 }
