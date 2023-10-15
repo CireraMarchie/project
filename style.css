@@ -19,10 +19,12 @@ nav ul {
     display: flex; /* Display items horizontally */
     justify-content: center; /* Center items horizontally */
     background-color: #333; /* Background color for navigation */
+    flex-wrap: wrap; /* Wrap items to the next line on smaller screens */
 }
 
 nav ul li {
     margin: 0 20px; /* Add space between items */
+    text-align: center; /* Center the text within list items */
 }
 
 nav a {
@@ -30,6 +32,7 @@ nav a {
     color: #fff;
     font-weight: bold;
     transition: color 0.3s;
+    line-height: 50px;
 }
 
 nav a:hover {
